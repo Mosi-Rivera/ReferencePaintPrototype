@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <section id="view">
+        <div class="c-c-canvas">
+            <div class="c-canvas">
+                <canvas id="reference-canvas"></canvas>
+                <span class="highlight" id="reference-highlight"></span>
+                <span id="reference-name">No reference loaded.</span>
+            </div>
+            <div class="c-canvas">
+                <canvas id="sheet-canvas"></canvas>
+                <span class="highlight" id="sheet-highlight"></span>
+                <input type="text" name="sheet-name" id="sheet-name" value="no sheet loaded" disabled>
+            </div>
+        </div>
+        <div id="c-c-sheet-frames">
+          <div id="c-sheet-frames">
+
+          </div>
+        </div>
+    </section>
+    <script src="scripts/states.js"></script>
+    <script src="scripts/canvas.js"></script>
+    <script src="scripts/helpers.js"></script>
+    <script src="scripts/sheet.js"></script>
+    <script src="scripts/reference.js"></script>
+    <script src="scripts/draw_methods.js"></script>
+    <script src="scripts/resize.js"></script>
+    <script src="scripts/listeners.js"></script>
+    <script src="scripts/action_manager.js"></script>
+  </body>
+</html>

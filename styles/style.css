@@ -1,0 +1,66 @@
+body, html
+{
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+canvas
+{
+    background-image:
+    linear-gradient(45deg, #ccc 25%, transparent 25%), 
+    linear-gradient(135deg, #ccc 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #ccc 75%),
+    linear-gradient(135deg, transparent 75%, #ccc 75%);
+    background-size:25px 25px;
+    background-position:0 0, 12.5px 0, 12.5px -12.5px, 0px 12.5px;
+    border-radius: 5px;
+}
+
+#view
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.c-c-canvas
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 1rem;
+    position: relative;
+}
+
+.c-canvas
+{
+    position: relative;
+}
+
+.c-canvas > span,
+.c-canvas > input
+{
+    display: block;
+}
+
+span.highlight {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.082);
+    pointer-events: none;
+}
+
+#c-c-sheet-frames
+{
+    padding: 0px 1rem;
+}
+
+#c-sheet-frames
+{
+    display: flex;
+    flex-flow: row nowrap;
+}
